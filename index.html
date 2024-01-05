@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="logo"><img src="./pics/Group 112.png" alt=""></span>
+            <input type="text" placeholder="Введите запрос" id="main-input">
+        </header>
+        <h1>Клиенты</h1>
+        <table>
+            <thead class="grey-font">
+                <tr>
+                    <th class="user-id">ID
+                        <span><img src="./pics/arrow_down.png" id="id-down"></span>
+                        <span><img src="./pics/arrow_up.png" id="id-up" class="hidden"></span>
+                    </th>
+                    <th>Фамилия Имя Отчество
+                        <span id="fio-down"><img src="./pics/а-я.png"></span>
+                        <span id="fio-up" class="hidden"><img src="./pics/я-а.png"></span>
+                    </th>
+                    <th>Дата и время создания
+                        <span id="created-down"><img src="./pics/arrow_down.png" alt=""></span>
+                        <span id="created-up" class="hidden"><img src="./pics/arrow_up.png" alt=""></span>
+                    </th>
+                    <th>Последние изменения
+                        <span id="updated-down"><img src="./pics/arrow_down.png" alt=""></span>
+                        <span id="updated-up" class="hidden"><img src="./pics/arrow_up.png" alt=""></span>
+                    </th>
+                    <th>
+                        Контакты
+                    </th>
+                    <th>
+                        Действия
+                    </th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button class="add-button"><img src="./pics/vector.png" alt=""> Добавить клиента</button>
+        <div class="popup_add">
+            <div class="popup__body">
+                <div class="popup_add_content">
+                    <div class="popup_add_close"><img src="./pics/frame 339.png" alt=""></div>
+                    <div class="popup_add_title">Новый клиент</div>
+                    <form class="popup__form">
+                        <input type="text" class="input-add" id="input-add-surname" placeholder="Фамилия*">
+                        <input type="text" class="input-add" id="input-add-name" placeholder="Имя*">
+                        <input type="text" class="input-add" id="input-add-lastname" placeholder="Отчество*">
+                        <div class="contacts-wrapper">
+                            <button class="add-contact-button" type="button"><img src="./pics/add_circle_outline.png" alt=""> Добавить контакт</button>
+                        </div>
+                        <button class="add-client-button" type="submit">Сохранить</button>
+                    </form>
+                    <div class="add-client-cancel">Отмена</div>
+                </div>
+            </div>
+        </div>
+        <div class="popup_change">
+            <div class="popup__body">
+                <div class="popup_change_content">
+                    <div class="popup_change_close"><img src="./pics/frame 339.png" alt=""></div>
+                    <div class="popup_change_title">Изменить данные<span>ID:<span id="clientsID"></span></span></div>
+                    <form class="popup__form form_change">
+                        <label for="surname">Фамилия*</label>
+                        <input type="text" name="surname" class="input-add" id="input-change-surname">
+                        <label for="name">Имя*</label>
+                        <input type="text" name="name" class="input-add" id="input-change-name">
+                        <label for="lastname">Отчество*</label>
+                        <input type="text" name="lastname" class="input-add" id="input-change-lastname">
+                        <div class="contacts-wrapper contacts-wrapper-changeform">
+                            <button class="add-contact-button add-contact-changeform" type="button"><img src="./pics/add_circle_outline.png" alt=""> Добавить контакт</button>
+                        </div>
+                        <button class="change-client-button" type="submit">Сохранить</button>
+                    </form>
+                    <div class="change-client-deletion">Удалить клиента</div>
+                </div>
+            </div>
+        </div>
+        <div class="popup_delete-approval">
+            <div class="popup__body">
+                <div class="popup_delete-approval_content">
+                    <div class="popup_deletion_close"><img src="./pics/frame 339.png" alt=""></div>
+                    <div class="popup_delete-approval_title">Удалить клиента</div>
+                    <div class="popup_delete-approval_text">Вы действительно хотите удалить этого клиента?</div>
+                        <button class="delete-client-button">Удалить</button>
+                    <div class="delete-client-cancel">Отмена</div>
+                </div>
+            </div>
+        </div> 
+        </div>   
+    
+
+</body>
+</html>
